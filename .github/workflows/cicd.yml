@@ -2,9 +2,9 @@ name: Build and Deploy to GKE
 
 on:
 #Real pipeline flow
-   push:
-     branches:
-      - main
+#   push:
+#     branches:
+#      - main
   workflow_dispatch:
 
 env:
