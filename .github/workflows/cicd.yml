@@ -1,6 +1,7 @@
 name: Build and Deploy to GKE
 
 on:
+#on: ["push", "pull_request"] --> ASAP
 #Real pipeline flow
 #   push:
 #     branches:
