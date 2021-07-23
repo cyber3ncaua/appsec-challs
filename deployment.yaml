@@ -1,7 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: helloworld-v1
+ # name: helloworld-v1
+  name: hash-test
   labels:
     app: helloworld
     version: v1
