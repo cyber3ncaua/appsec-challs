@@ -2,11 +2,21 @@ sudo: false
 
 language: node_js
 node_js:
-  -node
+  - node
+ 
+install:
+  - yarn install
   
 script:
-  - npm run lint
-  - npm run test:coveralls
+  - yarn test
+  - yarn run build 
+  
+deploy:
+  provide: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  on:
+    branch: main
   
 notification:
   email: false
